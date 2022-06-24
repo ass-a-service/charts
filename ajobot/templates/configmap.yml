@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  REDIS_HOST: {{ Release.Name }}-master.ajobot.svc.cluster.local
+  {{- if .Values.botToken}}
+  TOKEN: {{ .Values.botToken }}
+  {{- end }}
+kind: ConfigMap
+metadata:
+  name: {{ Release.Name }}
+  namespace: {{ Release.Namespace }}
+
