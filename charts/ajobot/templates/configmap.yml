@@ -4,6 +4,9 @@ data:
   {{- if .Values.botToken}}
   TOKEN: {{ .Values.botToken }}
   {{- end }}
+  {{- if .Values.debug}}
+  DEBUG: {{ .Values.debug }}
+  {{- end }}
 kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-config

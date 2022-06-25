@@ -1,0 +1,9 @@
+{{- if .Values.configmap.enabled }}
+apiVersion: v1
+data:
+  REDIS_HOST: {{ .Release.Name }}-redis-master.{{ .Release.Namespace }}.svc.cluster.local
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-apì-config
+  namespace: {{ .Release.Namespace }}
+{{- end }}
