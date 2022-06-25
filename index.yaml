@@ -3,6 +3,20 @@ entries:
   ajobot:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2022-06-25T23:41:13.62898275Z"
+    dependencies:
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    description: A Helm chart for Kubernetes
+    digest: b67439126328de046fbd105337b7c0948f7ef87b96893f01789b2ab5c5ebc427
+    name: ajobot
+    type: application
+    urls:
+    - https://github.com/ass-a-service/charts/releases/download/ajobot-1.0.1/ajobot-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2022-06-25T19:00:32.69474383+02:00"
     dependencies:
     - name: redis
@@ -15,4 +29,15 @@ entries:
     urls:
     - https://charts.ajobot.com/ajobot-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-25T19:00:32.690294774+02:00"
+  ajobot-api:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-06-25T23:41:13.77936911Z"
+    description: A Helm chart for Kubernetes
+    digest: c7a3e8b845170a7f8de56eaa050d6ee508bd626cc978c7dea27860ef23b864c2
+    name: ajobot-api
+    type: application
+    urls:
+    - https://github.com/ass-a-service/charts/releases/download/ajobot-api-1.0.0/ajobot-api-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-06-25T23:41:13.779382911Z"
