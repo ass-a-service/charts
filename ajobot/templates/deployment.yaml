@@ -21,10 +21,14 @@ spec:
       {{- end }}
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          envFrom:
+           - configMapRef:
+               name: {{ .Release.Name }}-config
+
       {{- if .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
