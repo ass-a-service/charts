@@ -3,7 +3,7 @@ entries:
   ajobot:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-06-25T18:50:27.3332215+02:00"
+    created: "2022-06-25T19:00:32.69474383+02:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -13,6 +13,6 @@ entries:
     name: ajobot
     type: application
     urls:
-    - https://ass-a-service.github.io/charts/ajobot-1.0.0.tgz
+    - https://charts.ajobot.com/charts/ajobot-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-25T18:50:27.327450017+02:00"
+generated: "2022-06-25T19:00:32.690294774+02:00"
