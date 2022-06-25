@@ -13,6 +13,6 @@ entries:
     name: ajobot
     type: application
     urls:
-    - https://charts.ajobot.com/charts/ajobot-1.0.0.tgz
+    - https://charts.ajobot.com/ajobot-1.0.0.tgz
     version: 1.0.0
 generated: "2022-06-25T19:00:32.690294774+02:00"
