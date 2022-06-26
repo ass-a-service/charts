@@ -25,6 +25,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          ports:
+          - containerPort: 80
           envFrom:
            - configMapRef:
                {{- if .Values.configmap.enabled }}
