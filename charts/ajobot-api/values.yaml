@@ -43,7 +43,8 @@ ingress:
   enabled: false
   className: nginx
   host: api.example.com
-  secretName: example-tls
+  # tls:
+  #   secretName: example-tls
 
 nodeSelector: {}
 
