@@ -5,7 +5,7 @@ data:
   TOKEN: {{ .Values.botToken }}
   {{- end }}
   {{- if .Values.debug}}
-  DEBUG: {{ .Values.debug }}
+  DEBUG: {{ .Values.debug | quote }}
   {{- end }}
 kind: ConfigMap
 metadata:
