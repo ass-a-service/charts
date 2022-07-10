@@ -40,6 +40,7 @@ tolerations: []
 affinity: {}
 
 redis:
+  enabled: true
   image:
     repository: redislabs/redistimeseries
     tag: 1.6.10

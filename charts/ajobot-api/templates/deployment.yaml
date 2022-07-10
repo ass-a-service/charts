@@ -25,6 +25,24 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+            successThreshold: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+            successThreshold: 1
           ports:
           - containerPort: 80
           envFrom:
@@ -34,7 +52,6 @@ spec:
                {{- else }}
                name: {{ .Values.configmapName }}
                {{- end }}
-
       {{- if .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
