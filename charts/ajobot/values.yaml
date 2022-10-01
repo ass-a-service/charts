@@ -7,12 +7,13 @@ replicaCount: 1
 image:
   repository: ghcr.io/ass-a-service/ajobot
   pullPolicy: IfNotPresent
-  tag: "v3.3.0"
+  tag: "v6.3.2"
 
 imagePullSecrets: []
 
 botToken: changeme
 # debug: 1 # enable this for admin commands, usually used for test environments
+# sentryDsn: https://xxxxxxx
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious

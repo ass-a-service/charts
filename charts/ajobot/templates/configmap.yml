@@ -7,6 +7,9 @@ data:
   {{- if .Values.debug}}
   DEBUG: {{ .Values.debug | quote }}
   {{- end }}
+  {{- if .Values.sentryDsn}}
+  SENTRY_DSN: {{ .Values.sentryDsn }}
+  {{- end }}
 kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-config
