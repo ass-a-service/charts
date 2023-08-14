@@ -76,6 +76,16 @@ entries:
   ajobot-api:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-08-14T16:01:39.253733572Z"
+    description: A Helm chart for Kubernetes
+    digest: 563a9b18b53e60baa2c5c5d6ccbdf7dd73049d0e8a7371acf471524f3c859f97
+    name: ajobot-api
+    type: application
+    urls:
+    - https://github.com/ass-a-service/charts/releases/download/ajobot-api-2.0.0/ajobot-api-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-07-10T21:15:22.061013267Z"
     description: A Helm chart for Kubernetes
     digest: 2b5fa2e533ce7ff2db3a238bcb4633e24ab036693262888b24756cb1bc30b7fe
@@ -124,4 +134,4 @@ entries:
     urls:
     - https://github.com/ass-a-service/charts/releases/download/ajobot-api-1.0.0/ajobot-api-1.0.0.tgz
     version: 1.0.0
-generated: "2022-10-03T17:27:08.723857679Z"
+generated: "2023-08-14T16:01:39.253829072Z"
