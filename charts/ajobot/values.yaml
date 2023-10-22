@@ -7,13 +7,14 @@ replicaCount: 1
 image:
   repository: ghcr.io/ass-a-service/ajobot
   pullPolicy: IfNotPresent
-  tag: "v6.3.2"
+  tag: "v6.4.0"
 
 imagePullSecrets: []
 
 botToken: changeme
 # debug: 1 # enable this for admin commands, usually used for test environments
 # sentryDsn: https://xxxxxxx
+# redisHost: # enable this if you want to set your own redis host, if you dont set any we will set the default one
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
